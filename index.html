@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>test</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form_password">
+            <div class="form_password_header">
+                <div class="form_password_header_logo"><img src="image/logo 2.png" alt="logo"></div>
+                <div class="form_password_header_title">
+                    <h2>Изменение пароля</h2>
+                </div>
+
+            </div>
+            <form class="form_password_input">
+                <input id="email" name="email" class="form_password_input_field" required type="email" required
+                    placeholder="Email / Логин">
+                <label for="email">*</label>
+                <input id="control_string" name="control_string" class="form_password_input_field" required type="text"
+                    placeholder="Контрольная строка">
+                <label for="control_string">*</label>
+
+                <div class="form_password_input_field_error form_password_input_field_error_control_string ">
+                    Неверное контрольное слово</div>
+                <input id="new_password" name="new_password" class="form_password_input_field " required type="password"
+                    placeholder="Новый пароль">
+                <label class="label_password" for="new_password">*</label>
+
+                <div class="form_password_input_field_error form_password_input_field_error_new_password ">Пароль
+                    должен быть не менее 6 символов</div>
+                <input id="dooble_new_password" name="dooble_new_password" class="form_password_input_field" required
+                    type="password" placeholder="Подтверждение пароля">
+                <label for="dooble_new_password">*</label>
+
+                <div class="form_password_input_field_error form_password_input_field_error_dooble_new_password ">
+                    Пароли не совпадают</div>
+                <p class="form_password_input_note"><span style=" color: #F13F58;">*</span> Обязательные поля</p>
+
+            </form>
+            <div class="form_password_footer">
+                <button class="form_password_footer_button">
+                    <p class="form_password_footer_button_text">Изменить пароль</p>
+                    <div class="form_password_footer_button_array"><img src="image/Arrow 1.png" alt="Array"></div>
+                </button>
+                <div class="form_password_footer_link">
+                    <p class="form_password_footer_link_button">Зарегестрироваться</p>
+                    <p class="form_password_footer_link_button">Войти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
