@@ -22,14 +22,28 @@ label_password.addEventListener('click', () => {
 })
 
 btnFooter.addEventListener('click', () => {
-    if (control_string.value.length > 12) {
-        form_password_input_field_error_control_string.classList.add('active');
-    }
-    if (new_password.value.length < 6) {
-        form_password_input_field_error_new_password.classList.add('active');
-    }
-    if (new_password.value != dooble_new_password.value) {
-        form_password_input_field_error_dooble_new_password.classList.add('active');
-    }
+    control_string.value.length > 12 ? form_password_input_field_error_control_string.classList.add('active') :
+        form_password_input_field_error_control_string.classList.remove('active');
+
+    new_password.value.length < 6 ? form_password_input_field_error_new_password.classList.add('active') :
+        form_password_input_field_error_new_password.classList.remove('active');
+
+    new_password.value !== dooble_new_password.value ? form_password_input_field_error_dooble_new_password.classList.add('active') :
+        form_password_input_field_error_dooble_new_password.classList.remove('active');
+
 });
+// btnFooter.addEventListener('click', () => {
+//     if (control_string.value.length > 12) {
+//         form_password_input_field_error_control_string.classList.add('active');
+//     }
+//     if (new_password.value.length < 6) {
+//         form_password_input_field_error_new_password.classList.add('active');
+//     }
+//     if (new_password.value != dooble_new_password.value) {
+//         form_password_input_field_error_dooble_new_password.classList.add('active');
+//     }
+// });
+
+
+
 
